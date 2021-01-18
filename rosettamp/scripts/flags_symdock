@@ -1,0 +1,13 @@
+-in:file:s input/refined1_0001_INPUT.pdb
+-in:file:native input/cwza_NoWPN_ignorechain_0001.pdb
+-ignore_unrecognized_res true
+-mp:setup:spanfiles input/chainA.span
+-mp:scoring:hbond
+-nstruct 1000
+-symmetry:symmetry_definition input/refined1_0001.c8.symm
+-symmetry:initialize_rigid_body_dofs
+-packing:pack_missing_sidechains 0
+-docking:dock_lowres_filter 5.0 10.0
+-out:path:pdb ./output
+-out:file:scorefile symdock1.sc
+-out:path:score ./output

@@ -1,0 +1,14 @@
+-parser:protocol membrane_relax.xml
+-in:file:s ./input/cwza_NoWPN_ignorechain_0001_clean.pdb
+-ignore_unrecognized_res true
+-mp:scoring:hbond
+-mp:setup:spanfiles ./input/cwza_NoWPN_ignorechain_0001_tweaked.span
+-mp:thickness 20
+-mp:visualize:thickness 20
+-nstruct 1000
+-relax:fast
+-relax:jump_move true
+-out:path:pdb ./output
+-out:file:scorefile relax_merged.sc
+-out:path:score ./output
+-packing:pack_missing_sidechains 0
